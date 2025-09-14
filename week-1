@@ -1,0 +1,506 @@
+Problem 1:
+//even or odd
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner kbd=new Scanner(System.in);
+	    int n=kbd.nextInt();
+	    if(n%2==0)
+	        System.out.print("even");
+	    else
+	         System.out.print("odd");
+	}
+}
+
+  Problem 2:
+//positive or negative
+   import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner kbd=new Scanner(System.in);
+	    int n=kbd.nextInt();
+	    if(n>0)
+	    {
+	        System.out.print("positive");
+	    }
+	    else if(n<0)
+	    {
+	        System.out.print("negative");
+	    }
+	    else
+	    {
+	        System.out.print("zero");
+	
+	    }
+	}
+}
+
+ Problem 3:
+    //divisible by 3 and 5
+ import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner kbd=new Scanner(System.in);
+	    int n=kbd.nextInt();
+	    if(n%3==0 && n%5==0)
+	    System.out.print("yes");
+	    else
+	    System.out.print("no");
+	}
+}
+
+ Problem 4:
+   // Convert Days into Years, Months, Days
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    int n =1332;
+	    int m = n%365;
+	    int d= m%30;
+	    if(n>0)
+	    {
+	    int year=n/365;
+	    System.out.println("years:"+year);
+	    }
+	    
+	    if(m>0)
+	    {
+	       m = m/30;
+	      System.out.println("months :"+m);
+	     
+	    }
+	     
+	    if(d>0)
+	    {
+	        System.out.println("days :"+d);
+	    }
+	}
+}
+
+ Problem 5:
+    //Mileage Remuneration Calculator
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner kbd=new Scanner(System.in);
+	    double start=kbd.nextDouble();
+	    double end=kbd.nextDouble();
+	    double dis = end-start;
+	    double rem = dis*25;
+	      System.out.printf("%.2f %.2f",dis,rem);
+	}
+}
+
+ Problem 6:
+    // print Max & Min 
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner kbd=new Scanner(System.in);
+	    int a=kbd.nextInt();
+	    int b=kbd.nextInt();
+	    if(a>b){
+	     System.out.println("Max :"+a);
+	      System.out.println("Min :"+b);
+	}
+	}
+}
+
+ Problem 7:
+   //print  Max of 3 Numbers
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner kbd = new Scanner(System.in);
+        int a = kbd.nextInt();
+        int b = kbd.nextInt();
+        int c = kbd.nextInt();
+        
+        // Find maximum
+        int max = a;
+        if (b > max) {
+            max = b;
+        }
+        if (c > max) {
+            max = c;
+        }
+        System.out.println("Max num:" + max);
+    }
+}
+
+ Problem 8:
+   //Positive, Negative or Zero
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner kbd=new Scanner(System.in);
+	    int n=kbd.nextInt();
+	    if(n>0)
+	    {
+	        System.out.print(n+" "+"is positive");
+	    }
+	    else if(n<0)
+	    {
+	        System.out.print(n+" "+"is negative");
+	    }
+	    else
+	    {
+	        System.out.print(n+" "+"iszero");
+	
+	    }
+	}
+}
+
+ Problem 9:
+    //Customer Grouping
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner kbd=new Scanner(System.in);
+	    int age =kbd.nextInt();
+	    int gender=kbd.nextInt();
+	    if(gender==1)
+	    {
+	        if(age<25)
+	        System.out.print("Group 1");
+	        else if(age<=45)
+	         System.out.print("Group 3");
+	         else
+	          System.out.print("Invalid");
+	    }
+	    else if(gender==2)
+	    {
+	        if(age<25)
+	         System.out.print("Group 2");
+	         else if(age<=45)
+	          System.out.print("Group 4");
+	          else
+	           System.out.print("Invalid");
+	    }
+	    else{
+	         System.out.print("invalid");
+	    }
+	    }
+	        
+	    }
+
+ Problem 10:
+	    // SBI Credit Card Eligibility
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner kbd=new Scanner(System.in);
+	    int priage =kbd.nextInt();
+	    int addoncardage =kbd.nextInt();
+	    int emplotype =kbd.nextInt();
+	    int income =kbd.nextInt();
+	    if(priage<=21 && priage>=60 && addoncardage>=18 && emplotype == 1 || emplotype == 2 || emplotype == 3 || emplotype == 4 && income<=300000)
+	        System.out.print("Yes"+" "+" You are eligible for SBI credit cards");
+	   else
+	        System.out.print("No"+" "+" You are not eligible for SBI credit cards");
+	        
+	    }
+	}
+
+ Problem 11:
+	//Triangle Shape
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int x = scan.nextInt();
+        int y = scan.nextInt();
+        int z = scan.nextInt();
+        if (x==y && y == z) {
+            System.out.println("Equilateral Triangle");
+        } else if (x==y || y==z || x==z) {
+            System.out.println("Isosceles Triangle");
+        } else {
+            System.out.println("Scalene Triangle");
+        }
+    }
+}
+
+ Problem 12:
+  // Descending Order of 4 Numbers
+  import java.util.Arrays;
+  import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int size = scan.nextInt();
+        int arr[] = new int[size];
+        for(int i=0;i<size;i++)
+        arr[i]=scan.nextInt();
+        Arrays.sort(arr);
+        for(int i=size-1;i>=0;i--)
+        System.out.print(arr[i]+" ");
+    }
+}
+
+ Problem 13:
+   //Character Type
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        char ch = scan.next().charAt(0);
+        if(Character.isLetter(ch))
+        System.out.println("alpabet");
+        else if(Character.isDigit(ch))
+        System.out.println("digit");
+        else
+        System.out.println("special character");
+    }
+}
+
+ Problem 14:
+  //Even Numbers in Range
+  import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n=scan.nextInt();
+        for(int i=1;i<=n;i++)
+        if(i%2==0)
+        System.out.println(i);
+        }
+}
+
+ Problem 15:
+  //Sum of Even Numbers
+  import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n=scan.nextInt();
+        int sum=0;
+        for(int i=1;i<=n;i++)
+        if(i%2==0)
+        sum+=i;
+        System.out.println(sum);
+    }
+}
+
+ Problem 16:
+  //Sum of Odd and Even Numbers
+  import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n=scan.nextInt();
+        int sumOdd=0,sumEven=0;
+        for(int i=1;i<=n;i++){
+            if(i%2!=0){
+            sumOdd+=i;
+            System.out.println(sumOdd);}
+            else{
+            sumEven+=i;
+                System.out.println(sumEven);
+            }
+        }
+            
+        }
+}
+
+ Problem 17:
+  //Factorial 
+  import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n=scan.nextInt();
+        long Factorial=1;
+        for(int i=1;i<=n;i++)
+        Factorial *= i;
+        System.out.print(Factorial);
+    }
+}
+
+ Problem 18:
+  //Print Digits Right to Left
+  import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+	    Scanner kbd=new Scanner(System.in);
+	    int n=kbd.nextInt();
+	    while(n>0)
+	    {
+	        int dig=n%10;
+	        System.out.println(dig);
+	        n=n/10;
+	    }
+	}
+}
+
+ Problem 19:
+  //Sum of Numbers Divisible by 3 or 5 
+ /import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+	    
+	    int sum =0;
+	     for(int i=1;i<=10;i++){
+	     if(i%3==0 || i%5==0){
+	         sum+=i;
+	     }
+	     }
+	         System.out.println(sum);
+	     
+	}
+}
+
+ Problem 20:
+  //Count Digits
+  import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+	    Scanner kbd=new Scanner(System.in);
+	    int n = kbd.nextInt();
+	    int count=0;
+        while(n>0)
+        {
+            n=n/10;
+            count++;
+            
+        }
+        System.out.print(count);
+	}
+}
+
+ Problem 21:
+  // Sum of Digits 
+  import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+	    Scanner kbd=new Scanner(System.in);
+	    int n = kbd.nextInt();
+	    int count=0;
+	    int sum=0;
+        while(n>0)
+        {
+            int dig=n%10;
+            sum+=dig;
+            n=n/10;
+        }
+        
+        System.out.print(sum);
+	}
+}
+
+ Problem 22:
+  //Harshad Number
+  import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+	    Scanner kbd=new Scanner(System.in);
+	    int n = kbd.nextInt();
+        int sum=0;
+        while(n>0)
+        {
+            int dig = n%10;
+             sum = sum+dig;
+             n = n/10;
+        }
+        if(n%sum==0)
+        System.out.print("Harshad Number");
+        else
+         System.out.print("not Harshad Number");
+	}
+}
+
+ Problem 23:
+  //Perfect Number 
+  import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+	    Scanner kbd=new Scanner(System.in);
+	    int num = kbd.nextInt();
+	    int sum=0;
+	    for(int i=1;i<=num/2;i++)
+	    if(num%i==0){
+	        sum+=i;
+	    }
+	    if(sum==num)
+	     System.out.print("Perfect Number");
+	     else
+	     System.out.print("Not Perfect Number");
+	    }
+}
+
+ Problem 24:
+  // Prime Number
+  import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+	    Scanner kbd=new Scanner(System.in);
+	    int num = kbd.nextInt();
+	    if(num%1==0 || num%num==0)
+	    System.out.print("Prime Number");
+	     else
+	     System.out.print("Not Prime Number");
+	}
+}
+
+ Problem 25:
+  // Perfect Square 
+  import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+	    Scanner kbd=new Scanner(System.in);
+	    int num = kbd.nextInt();
+	     int sqrt = (int) Math.sqrt(num);
+	     if(sqrt*sqrt==num)
+	     System.out.print("Perfect square");
+	     else
+	     System.out.print("Not Perfect square");
+	    }
+}
+
+ Problem 26:
+  //Fibonacci Series 
+ import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+	    Scanner kbd=new Scanner(System.in);
+	    int n= kbd.nextInt();
+	    int fir=0, sec=1;
+        for (int i = 1; i <= n; i++) {
+            System.out.print(fir + " ");
+            int temp = fir + sec;
+            fir = sec;
+            sec = temp;
+        }
+	}
+}
+
+	     
+
+	    
+  
+	    
+	    
+        
+    
+        
+    
+
+        
+        
+        
+        
+
+
+  
+
+	    
